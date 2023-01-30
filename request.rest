@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNLiBGYWRpbCBNYXJ0aWFzIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2NzUwNjEyMzIsImV4cCI6MTY3NTA2MTI1Mn0.JWDR0-Xc0s-JWJST34xazeqKXVQCuOvgGvFFDNmLKr4
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "M. Fadil Martias",
+    "email": "email@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+
+DELETE  http://localhost:5000/logout
